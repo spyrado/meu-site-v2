@@ -14,7 +14,7 @@ const gulp = require('gulp')
   });
    
   gulp.task('sass:watch', function () {
-    gulp.watch('./src/scss/**/*.scss', ['sass']);
+    gulp.watch('./src/scss/**/*.scss', gulp.series('sass'));
   });
 
 // INICIA UM SERVIDOR COM LIVERELOAD

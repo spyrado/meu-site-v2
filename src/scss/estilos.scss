@@ -1,1 +1,8 @@
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+// Framework BOOTSTRAP  v4.3.1
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// Variaveis
+@import './layout/variaveis/variaveis';
+
+
+@import './layout/header/header';
