@@ -1,0 +1,27 @@
+{
+  "name": "meu-site-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-server-livereload": "^1.9.2",
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spyrado/meu-site-v2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spyrado/meu-site-v2/issues"
+  },
+  "homepage": "https://github.com/spyrado/meu-site-v2#readme"
+}
