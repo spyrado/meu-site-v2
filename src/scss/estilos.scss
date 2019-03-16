@@ -3,9 +3,17 @@
 
 // FontAwesome 5.7.2
 @import '../scss/layout/fonts/font-awesome/fontawesome';
+@import '../scss/layout/fonts/font-awesome/solid';
+@import '../scss/layout/fonts/font-awesome/brands';
 
 // Variaveis
 @import './layout/variaveis/variaveis';
 
+//GLOBAL
+@import './layout/base/base';
 
+//HEADER
 @import './layout/header/header';
+//JUMBOTRON
+@import './layout/jumbotron/jumbotron';
+@import './layout/timeline/time-line';

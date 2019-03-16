@@ -23,6 +23,7 @@ gulp.task('webserver', function() {
     .pipe(server({
       livereload: true,
       directoryListing: true,
-      open: true
+      open: true,
+      host: "192.168.15.15"
     }));
 });
