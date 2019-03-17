@@ -1,0 +1,4 @@
+@mixin titulo($cor-titulo: $cor-primaria, $cor-borda: $cor-primaria) {
+  color: $cor-titulo;
+  border-bottom: 1px solid $cor-borda;
+}

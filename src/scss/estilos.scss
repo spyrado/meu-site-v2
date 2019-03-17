@@ -9,6 +9,10 @@
 // Variaveis
 @import './layout/variaveis/variaveis';
 
+// Placeholders
+@import './layout/placeholders/placeholder';
+@import './layout/mixins/mixins';
+
 //GLOBAL
 @import './layout/base/base';
 
@@ -17,3 +21,6 @@
 //JUMBOTRON
 @import './layout/jumbotron/jumbotron';
 @import './layout/timeline/time-line';
+@import './layout/timeline/olho';
+@import './layout/contato/contato';
+@import './layout/rodape/rodape';

@@ -1,0 +1,13 @@
+.section-contato {
+  
+  background: $cor-primaria;
+  color: $white;
+
+  .title {
+    @include titulo($white,$white);
+  }
+
+  .img-linkedin-perfil {
+    width: 40px;
+  }
+}

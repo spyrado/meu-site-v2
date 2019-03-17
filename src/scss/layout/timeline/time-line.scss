@@ -1,3 +1,9 @@
+.section-timeline{
+  position: relative;
+  .title{
+    @include titulo();
+  }
+}
 .main-timeline .timeline{
   padding: 50px 60px;
   position: relative;
@@ -20,7 +26,7 @@
   height: 70px;
   line-height: 70px;
   border-radius: 50%;
-  background: #5a45b8;
+  background: $cor-primaria;
   box-sizing: border-box;
   border: 2px solid transparent;
   box-shadow: 0 0 0 2px transparent;
@@ -41,7 +47,7 @@
   top: 0;
   left: -36px;
   border: 2px solid #fff;
-  box-shadow: 0 0 0 2px #5a45b8;
+  box-shadow: 0 0 0 2px $cor-primaria;
 }
 .main-timeline .timeline:last-child .timeline-icon{
   top: auto;
@@ -61,9 +67,9 @@
   float: right;
   text-align: right;
 }
-.main-timeline .title{
+.main-timeline .sub-title{
   font-size: 18px;
-  color: #5a45b8;
+  color: $cor-primaria;
   margin-top: 0;
   text-transform: uppercase;
 }
@@ -75,9 +81,9 @@
 }
 .main-timeline .border-time-line{
   width: 50%;
-  border-top: 2px solid #5a45b8;
-  border-bottom: 2px solid #5a45b8;
-  border-left: 2px solid #5a45b8;
+  border-top: 2px solid $cor-primaria;
+  border-bottom: 2px solid $cor-primaria;
+  border-left: 2px solid $cor-primaria;
   border-radius: 6px 0 0 6px;
   position: absolute;
   top: 0;
@@ -87,7 +93,7 @@
 }
 .main-timeline .timeline:nth-child(2n) .border-time-line{
   border-left: none;
-  border-right: 2px solid #5a45b8;
+  border-right: 2px solid $cor-primaria;
   border-radius: 0 6px 6px 0;
   left: 50%;
 }
