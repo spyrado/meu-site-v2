@@ -5,181 +5,158 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Inicio - Nicolas G Matheus - Desenvolvedor Front-End</title>
+  <style>
+    html,
+    body,
+    .container {
+      height: 100%;
+      padding: 0;
+      margin: 0;
+    }
 
-  <!-- Bootstrap 4.3.1 -->
-  <link rel="stylesheet" href="./dist/css/estilos.css">
+    body {
+      background-color: #5a45b8;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%234d3b9c' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+      -webkit-box-shadow: inset 97px 82px 300px 576px rgba(0,0,0,0.42);
+      -moz-box-shadow: inset 97px 82px 300px 576px rgba(0,0,0,0.42);
+      box-shadow: inset 97px 82px 300px 576px rgba(0,0,0,0.42);
+    }
 
+    .container {
+      display: flex;
+      align-items: center;
+    }
+
+    .sk-folding-cube {
+      margin: 20px auto;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      -webkit-transform: rotateZ(45deg);
+      transform: rotateZ(45deg);
+    }
+
+    .sk-folding-cube .sk-cube {
+      float: left;
+      width: 50%;
+      height: 50%;
+      position: relative;
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+    .sk-folding-cube .sk-cube:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+      animation: sk-foldCubeAngle 2.4s infinite linear both;
+      -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+      transform-origin: 100% 100%;
+    }
+
+    .sk-folding-cube .sk-cube2 {
+      -webkit-transform: scale(1.1) rotateZ(90deg);
+      transform: scale(1.1) rotateZ(90deg);
+    }
+
+    .sk-folding-cube .sk-cube3 {
+      -webkit-transform: scale(1.1) rotateZ(180deg);
+      transform: scale(1.1) rotateZ(180deg);
+    }
+
+    .sk-folding-cube .sk-cube4 {
+      -webkit-transform: scale(1.1) rotateZ(270deg);
+      transform: scale(1.1) rotateZ(270deg);
+    }
+
+    .sk-folding-cube .sk-cube2:before {
+      -webkit-animation-delay: 0.3s;
+      animation-delay: 0.3s;
+    }
+
+    .sk-folding-cube .sk-cube3:before {
+      -webkit-animation-delay: 0.6s;
+      animation-delay: 0.6s;
+    }
+
+    .sk-folding-cube .sk-cube4:before {
+      -webkit-animation-delay: 0.9s;
+      animation-delay: 0.9s;
+    }
+
+    @-webkit-keyframes sk-foldCubeAngle {
+
+      0%,
+      10% {
+        -webkit-transform: perspective(140px) rotateX(-180deg);
+        transform: perspective(140px) rotateX(-180deg);
+        opacity: 0;
+      }
+
+      25%,
+      75% {
+        -webkit-transform: perspective(140px) rotateX(0deg);
+        transform: perspective(140px) rotateX(0deg);
+        opacity: 1;
+      }
+
+      90%,
+      100% {
+        -webkit-transform: perspective(140px) rotateY(180deg);
+        transform: perspective(140px) rotateY(180deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes sk-foldCubeAngle {
+
+      0%,
+      10% {
+        -webkit-transform: perspective(140px) rotateX(-180deg);
+        transform: perspective(140px) rotateX(-180deg);
+        opacity: 0;
+      }
+
+      25%,
+      75% {
+        -webkit-transform: perspective(140px) rotateX(0deg);
+        transform: perspective(140px) rotateX(0deg);
+        opacity: 1;
+      }
+
+      90%,
+      100% {
+        -webkit-transform: perspective(140px) rotateY(180deg);
+        transform: perspective(140px) rotateY(180deg);
+        opacity: 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <header class="cabecalho">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light menu-nav">
-      <a class="navbar-brand nav-logo" href="#">
-        <img class="logo-img" src="./src/img/logo-nicolas-desenvolvedor-front-end.png" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">
-              <i class="fas fa-home"></i> Inicio <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="fas fa-user"></i>
-              Sobre Mim
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="fas fa-certificate"></i>
-              Certificados
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="fas fa-phone"></i>
-              Contato
-            </a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Busca</button>
-        </form>
-      </div>
-    </nav>
-  </header>
-
-  <section class="jumbotron-section">
-    <div class="jumbotron">
-      <div class="row">
-        <div class="col-12 col-sm-6 text-center">
-          <h1 class="title">Nicolas Guilherme Matheus</h1>
-          <figure class="figure">
-            <img src="./src/img/nicolas-guilherme.jpg" class="figure-img img-fluid rounded-circle" alt="A generic square placeholder image with rounded corners in a figure.">
-            <figcaption class="figure-caption text-white">
-              <strong>Desenvolvedor Front-End</strong>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="col-12 col-sm-6">
-          <h3>#Sobre Mim</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora culpa quia, maxime tempore consectetur
-            facere tenetur expedita at saepe unde omnis accusamus, voluptatem cupiditate architecto, accusantium
-            recusandae quidem eaque veniam?</p>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora culpa quia, maxime tempore consectetur
-            facere tenetur expedita at saepe unde omnis accusamus, voluptatem cupiditate architecto, accusantium
-            recusandae quidem eaque veniam?</p>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora culpa quia, maxime tempore consectetur
-            facere tenetur expedita at saepe unde omnis accusamus, voluptatem cupiditate architecto, accusantium
-            recusandae quidem eaque veniam?</p>
-        </div>
-      </div>
+  <div class="container">
+    <div class="sk-folding-cube">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
     </div>
-  </section>
+  </div>
 
-  <section class="container time-line-section">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="main-timeline">
-          <div class="timeline">
-            <div class="timeline-icon"><i class="fas fa-mobile-alt"></i></i></div>
-            <div class="timeline-content">
-              <h4 class="title">Design Responsivo</h4>
-              <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus vitae leo sed fermentum.
-                Sed eu molestie diam, rutrum ultricies nulla. Praesent id tincidunt nulla.
-              </p>
-            </div>
-            <div class="border-time-line"></div>
-          </div>
-          <div class="timeline">
-            <div class="timeline-icon"><i class="fas fa-chart-line"></i></div>
-            <div class="timeline-content">
-              <h4 class="title">SEO</h4>
-              <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus vitae leo sed fermentum.
-                Sed eu molestie diam, rutrum ultricies nulla. Praesent id tincidunt nulla.
-              </p>
-            </div>
-            <div class="border-time-line"></div>
-          </div>
-          <div class="timeline">
-            <div class="timeline-icon"><i class="fab fa-html5"></i></div>
-            <div class="timeline-content">
-              <h4 class="title">HTML5</h4>
-              <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus vitae leo sed fermentum.
-                Sed eu molestie diam, rutrum ultricies nulla. Praesent id tincidunt nulla.
-              </p>
-            </div>
-            <div class="border-time-line"></div>
-          </div>
-          <div class="timeline">
-            <div class="timeline-icon"><i class="fab fa-sass"></i></div>
-            <div class="timeline-content">
-              <h4 class="title">CSS3 / SASS</h4>
-              <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus vitae leo sed fermentum.
-                Sed eu molestie diam, rutrum ultricies nulla. Praesent id tincidunt nulla.
-              </p>
-            </div>
-            <div class="border-time-line"></div>
-          </div>
-          <div class="timeline">
-            <div class="timeline-icon"><i class="fab fa-js-square"></i></div>
-            <div class="timeline-content">
-              <h4 class="title">JavaScript / TypeScript / JQuery</h4>
-              <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus vitae leo sed fermentum.
-                Sed eu molestie diam, rutrum ultricies nulla. Praesent id tincidunt nulla.
-              </p>
-            </div>
-            <div class="border-time-line"></div>
-          </div>
-          <div class="timeline">
-              <div class="timeline-icon"><i class="fab fa-gulp"></i></div>
-              <div class="timeline-content">
-                <h4 class="title">Gulp</h4>
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus vitae leo sed fermentum.
-                  Sed eu molestie diam, rutrum ultricies nulla. Praesent id tincidunt nulla.
-                </p>
-              </div>
-              <div class="border-time-line"></div>
-            </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contato-section container p-5">
-    <h2>#Contatos</h2>
-    <div class="row">
-      <div class="col-12 col-sm-4">
-        <h5>TITLE</h5>
-        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nemo optio cupiditate ut saepe repudiandae sit, laborum architecto culpa. Natus ad dicta quia veritatis deserunt dolorum maxime magni ab quam. </p>
-      </div>
-      <div class="col-12 col-sm-4">
-        <h5>TITLE</h5>
-        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nemo optio cupiditate ut saepe repudiandae sit, laborum architecto culpa. Natus ad dicta quia veritatis deserunt dolorum maxime magni ab quam. </p>
-      </div>
-      <div class="col-12 col-sm-4">
-        <h5>TITLE</h5>
-        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nemo optio cupiditate ut saepe repudiandae sit, laborum architecto culpa. Natus ad dicta quia veritatis deserunt dolorum maxime magni ab quam. </p>
-      </div>
-    </div>
-  </section>
-
-  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="./node_modules/popper.js/dist/popper.min.js"></script>
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    setTimeout(() => {
+      window.location.href = "http://192.168.15.15:8000/index2.html";
+    }, 2600);
+  </script>
 </body>
 
 </html>
