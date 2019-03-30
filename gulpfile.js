@@ -8,13 +8,13 @@ const gulp = require('gulp')
 
   
   gulp.task('sass', function () {
-    return gulp.src('./src/scss/estilos.scss')
+    return gulp.src('src/scss/estilos.scss')
       .pipe(sass().on('error', sass.logError))
-      .pipe(gulp.dest('./dist/css'));
+      .pipe(gulp.dest('./dist/css/'));
   });
    
   gulp.task('sass:watch', function () {
-    gulp.watch('./src/scss/estilos.scss', gulp.series('sass'));
+    gulp.watch('src/scss/**/*.scss', gulp.series('sass'));
   });
 
 // INICIA UM SERVIDOR COM LIVERELOAD
@@ -24,6 +24,6 @@ gulp.task('webserver', function() {
       livereload: true,
       directoryListing: true,
       open: true,
-      host: "192.168.15.15"
+      host: "192.168.15.232"
     }));
 });
