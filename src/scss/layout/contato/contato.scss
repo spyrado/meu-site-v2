@@ -1,13 +1,10 @@
 .section-contato {
-  
-  background: $cor-primaria;
-  color: $white;
 
   .title {
-    @include titulo($white,$white);
+    @include titulo();
   }
 
-  .img-linkedin-perfil {
-    width: 40px;
+  .card-body{
+    border: 10px dashed yellow;
   }
 }

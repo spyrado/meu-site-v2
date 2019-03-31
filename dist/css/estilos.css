@@ -11480,15 +11480,20 @@ body {
   transform-style: preserve-3d;
   transform: rotateY(0.01deg); }
 
-.section-contato {
+.section-servicos {
   background: #5a45b8;
-  color: #fff; }
-  .section-contato .title {
+  color: white; }
+  .section-servicos .title {
     color: #fff;
     border-bottom: 1px solid #fff; }
-  .section-contato .img-linkedin-perfil {
-    width: 40px; }
+
+.section-contato .title {
+  color: #5a45b8;
+  border-bottom: 1px solid #5a45b8; }
+
+.section-contato .card-body {
+  border: 10px dashed yellow; }
 
 .rodape {
-  background: #fff;
-  color: #5a45b8; }
+  background: #5a45b8;
+  color: #fff; }

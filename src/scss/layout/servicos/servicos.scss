@@ -1,0 +1,7 @@
+.section-servicos{
+  background: $cor-primaria;
+  color: white;
+  .title{
+    @include titulo($white,$white);
+  }
+}
