@@ -1,6 +1,9 @@
 .section-servicos{
-  color: white;
-  .title{
-    @include titulo();
+  background: $white;
+  .title {
+    @include titulo($cor-background,$cor-background);
+  }
+  .servicos-card{
+    @include cor-borda();
   }
 }

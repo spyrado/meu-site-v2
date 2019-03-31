@@ -11403,8 +11403,7 @@ body {
   position: relative; }
   .section-timeline .title {
     color: #fff;
-    border-bottom: 1px solid #fff;
-    text-align: center; }
+    border-bottom: 1px solid #fff; }
 
 .main-timeline .timeline {
   padding: 50px 60px;
@@ -11590,18 +11589,19 @@ body {
   transform: rotateY(0.01deg); }
 
 .section-servicos {
-  color: white; }
+  background: #fff; }
   .section-servicos .title {
-    color: #fff;
-    border-bottom: 1px solid #fff;
-    text-align: center; }
+    color: #9b4aff;
+    border-bottom: 1px solid #9b4aff; }
+  .section-servicos .servicos-card {
+    color: #9b4aff;
+    border: 1px solid #9b4aff; }
 
 .section-contato {
-  background: #fff; }
+  background: transparent; }
   .section-contato .title {
-    color: #9b4aff;
-    border-bottom: 1px solid #9b4aff;
-    text-align: center; }
+    color: #fff;
+    border-bottom: 1px solid #fff; }
   .section-contato .card-body {
     color: #9b4aff;
     border: 1px solid #9b4aff; }

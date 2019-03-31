@@ -1,5 +1,9 @@
 @mixin titulo($cor-titulo: $white, $cor-borda: $white) {
   color: $cor-titulo;
   border-bottom: 1px solid $cor-borda;
-  text-align: center;
+}
+
+@mixin cor-borda($cor: $cor-background, $borda: $cor-background){
+  color: $cor;
+  border: 1px solid $borda;
 }
