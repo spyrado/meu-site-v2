@@ -1,5 +1,22 @@
-.menu-nav{
+.cabecalho{
   .logo-img{
     width: 104px;
+  }
+  .icon-burguer{
+    font-size: 1.8rem;
+  }
+  @media (max-width: 991px){
+
+    .navbar-nav{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #ccc;
+      width: 100%;
+      z-index: 4000;
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 }
