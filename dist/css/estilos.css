@@ -11596,13 +11596,15 @@ body {
     border-bottom: 1px solid #fff;
     text-align: center; }
 
-.section-contato .title {
-  color: #fff;
-  border-bottom: 1px solid #fff;
-  text-align: center; }
-
-.section-contato .card-body {
-  border: 10px dashed yellow; }
+.section-contato {
+  background: #fff; }
+  .section-contato .title {
+    color: #9b4aff;
+    border-bottom: 1px solid #9b4aff;
+    text-align: center; }
+  .section-contato .card-body {
+    color: #9b4aff;
+    border: 1px solid #9b4aff; }
 
 .rodape {
   color: #fff; }

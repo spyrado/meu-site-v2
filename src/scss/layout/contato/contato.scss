@@ -1,10 +1,11 @@
 .section-contato {
-
+  background: $white;
   .title {
-    @include titulo();
+    @include titulo($cor-background,$cor-background);
   }
 
   .card-body{
-    border: 10px dashed yellow;
+    color: $cor-background;
+    border: 1px solid $cor-background;
   }
 }
