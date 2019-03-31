@@ -1,6 +1,6 @@
 .section-servicos{
   color: white;
   .title{
-    @include titulo($white,$white);
+    @include titulo();
   }
 }
