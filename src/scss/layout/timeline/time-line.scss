@@ -26,10 +26,10 @@
   height: 70px;
   line-height: 70px;
   border-radius: 50%;
-  background: $cor-primaria;
+  background: #8431e0;
   box-sizing: border-box;
-  border: 2px solid transparent;
-  box-shadow: 0 0 0 2px transparent;
+  border: 2px solid $white;
+  box-shadow: 0 0 0 2px $white;
   text-align: center;
   margin: auto 0;
   font-size: 25px;
@@ -47,7 +47,7 @@
   top: 0;
   left: -36px;
   border: 2px solid #fff;
-  box-shadow: 0 0 0 2px $cor-primaria;
+  box-shadow: 0 0 0 2px $white;
 }
 .main-timeline .timeline:last-child .timeline-icon{
   top: auto;
@@ -69,21 +69,21 @@
 }
 .main-timeline .sub-title{
   font-size: 18px;
-  color: $cor-primaria;
+  color: $white;
   margin-top: 0;
   text-transform: uppercase;
 }
 .main-timeline .description{
   font-size: 15px;
-  color: #636363;
+  color: #e0dada;
   line-height: 25px;
   margin: 0;
 }
 .main-timeline .border-time-line{
   width: 50%;
-  border-top: 2px solid $cor-primaria;
-  border-bottom: 2px solid $cor-primaria;
-  border-left: 2px solid $cor-primaria;
+  border-top: 2px solid $white;
+  border-bottom: 2px solid $white;
+  border-left: 2px solid $white;
   border-radius: 6px 0 0 6px;
   position: absolute;
   top: 0;
@@ -93,7 +93,7 @@
 }
 .main-timeline .timeline:nth-child(2n) .border-time-line{
   border-left: none;
-  border-right: 2px solid $cor-primaria;
+  border-right: 2px solid $white;
   border-radius: 0 6px 6px 0;
   left: 50%;
 }
