@@ -1,4 +1,5 @@
-class HomePageController{
+import {} from '../services/APIWhatsApp.js';
+export class HomePageController{
   
   enviaMensagemWhatsApp(formulario){
     event.preventDefault();

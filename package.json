@@ -4,9 +4,13 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
+    "@babel/polyfill": "^7.4.3",
     "gulp-server-livereload": "^1.9.2"
   },
   "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
     "bootstrap": "^4.3.1",
     "gulp": "^4.0.0",
     "gulp-sass": "^4.0.2",
