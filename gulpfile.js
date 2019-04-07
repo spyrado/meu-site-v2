@@ -9,10 +9,7 @@ const gulp = require('gulp')
   
   sass.compiler = require('node-sass');
 
-  gulp.task('default', gulp.series(watch, gulp.parallel(minificaCss, minificaHtml),
-
-    function (done) { done(); }    
-));
+  gulp.task('default', gulp.parallel(minificaCss, minificaHtml, minificaImg));
 
   function minificaCss(){
     return gulp.src('dist/css/estilos.css')
@@ -26,12 +23,11 @@ const gulp = require('gulp')
       .pipe(gulp.dest('./'));
   }
   
-
-  gulp.task('minify-img', () => {
+  function minificaImg(){  
     return gulp.src('src/img/*')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/img'));
-  });
+  }
 
   gulp.task('sass', function () {
     return gulp.src('src/scss/estilos.scss')
