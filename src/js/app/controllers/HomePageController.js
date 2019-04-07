@@ -1,4 +1,4 @@
-import {} from '../services/APIWhatsApp.js';
+import { APIWhatsApp } from '../services/APIWhatsApp.js';
 export class HomePageController{
   
   enviaMensagemWhatsApp(formulario){

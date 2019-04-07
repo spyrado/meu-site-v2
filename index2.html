@@ -250,13 +250,10 @@
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <script src="./node_modules/popper.js/dist/popper.min.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="./src/js/app/controllers/HomePageController.js"></script>
-  <script src="./src/js/app/models/HomePage.js"></script>
-  <script src="./src/js/app/services/APIWhatsApp.js"></script>
+  <script src="./node_modules/systemjs/dist/system.min.js"></script>
   <script>
-    let homePageController = new HomePageController();
+    System.import('./dist/app/inits/homePageController.init.js');
   </script>
-  <!-- <script src="./src/js/index2.js"></script> -->
   <script>
     var anoAtual = new Date().getFullYear();
     var anoDeNascimento = 1995;
