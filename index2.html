@@ -72,7 +72,7 @@
     </div>
   </section>
 
-  <section class="container section-timeline">
+  <section class="container section-timeline py-5">
     <section class="stage">
       <figure class="ball">
         <span class="shadow"></span>
@@ -228,6 +228,18 @@
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col-12 pt-3">
+          <h3>Solicite um orçamento via <i class="fab fa-whatsapp"></i> WhatsApp:</h3>
+          <form class="envia-msg-whatsapp" onsubmit="homePageController.enviaMensagemWhatsApp(this)">
+            <div class="form-group">
+              <label for="msg-whatsapp">Solicite um orçamento:</label>
+              <textarea class="form-control" id="msg-whatsapp" name="mensagem" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning text-white float-right btn-lg w-50">Enviar</button>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -238,6 +250,13 @@
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <script src="./node_modules/popper.js/dist/popper.min.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./src/js/app/controllers/HomePageController.js"></script>
+  <script src="./src/js/app/models/HomePage.js"></script>
+  <script src="./src/js/app/services/APIWhatsApp.js"></script>
+  <script>
+    let homePageController = new HomePageController();
+  </script>
+  <!-- <script src="./src/js/index2.js"></script> -->
   <script>
     var anoAtual = new Date().getFullYear();
     var anoDeNascimento = 1995;
