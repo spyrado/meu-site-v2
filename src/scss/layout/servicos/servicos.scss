@@ -1,5 +1,8 @@
 .section-servicos{
   background: $white;
+  width: 70%;
+  margin: 0 auto;
+  transform: skewX(-20deg);
   .title {
     @include titulo($cor-background,$cor-background);
   }

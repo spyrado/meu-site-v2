@@ -1,3 +1,16 @@
 .rodape {
   color: $white;
+
+  .redes-sociais li{
+    display: inline-block;
+    margin: 5px;
+    font-size: 2rem;
+  }
+  .links-redes-sociais{
+    color: $white;
+    transition: color 0.15s ease-in-out;
+    &:hover{
+      color: $botao-custom;
+    }
+  }
 }
