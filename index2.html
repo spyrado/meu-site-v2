@@ -6,7 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" type="image/png" href="./dist/img/favicon-nicolas-logo.png" />
+  <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#9b4aff">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#9b4aff">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Nicolas Guilherme Matheus - Desenvolvedor Front-End - Freelancer</title>
 
   <!-- Bootstrap 4.3.1 -->
@@ -200,23 +206,41 @@
       <h2 class="title">Contatos</h2>
       <div class="row">
         <div class="col-12 col-md-4 text-center text-md-left pt-3">
-          <h4>Solicite um orçamento<br> via <i class="fab fa-whatsapp"></i> WhatsApp:</h4>
+          <h4 class="subtitle">Solicite um orçamento<br> via <i class="fab fa-whatsapp"></i> WhatsApp:</h4>
           <p>Preencha o formulário, e informe sua necessidade</p>
         </div>
         <div class="col-12 col-md-8 pt-3">
-          <form class="envia-msg-whatsapp row">
+          <form class="envia-msg-whatsapp row needs-validation" novalidate>
             <div class="form-group col-12 col-md-6">
               <label for="nome">Nome:</label>
-              <input type="email" class="form-control" id="nome" placeholder="Insira seu nome">
+              <input type="text" class="form-control" id="nome" name="nome" placeholder="Insira seu nome" required>
+              <div class="valid-feedback">
+                Correto
+              </div>
+              <div class="invalid-feedback">
+                O campo nome deve ser preenchido
+              </div>
             </div>
             <div class="form-group col-12 col-md-6">
-              <label for="titulo">Titulo</label>
-              <input type="password" class="form-control" id="titulo" placeholder="Insira um Titulo">
+              <label for="assunto">Assunto:</label>
+              <input type="text" class="form-control" id="assunto" name="assunto" placeholder="Insira o assunto" required>
+              <div class="valid-feedback">
+                Correto
+              </div>
+              <div class="invalid-feedback">
+                O campo assunto deve ser preenchido
+              </div>
             </div>
             <div class="form-group col-12">
               <label for="msg-whatsapp">Mensagem</label>
               <textarea class="form-control" id="msg-whatsapp" name="mensagem" rows="3"
-                placeholder="Sua mensagem aqui.."></textarea>
+                placeholder="Sua mensagem aqui.." required></textarea>
+                <div class="valid-feedback">
+                Correto
+              </div>
+              <div class="invalid-feedback">
+                Mensagem obrigatória =(
+              </div>
             </div>
             <div class="d-flex px-3 justify-content-end col-12">
               <button type="submit" class="btn btn-warning text-white">Enviar</button>

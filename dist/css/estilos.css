@@ -11589,10 +11589,12 @@ body {
   transform: rotateY(0.01deg); }
 
 .section-servicos {
-  background: #fff;
-  width: 70%;
-  margin: 0 auto;
-  transform: skewX(-20deg); }
+  background: #fff; }
+  @media (min-width: 576px) {
+    .section-servicos {
+      width: 80%;
+      margin: 0 auto;
+      transform: skewX(-10deg); } }
   .section-servicos .title {
     color: #9b4aff;
     border-bottom: 1px solid #9b4aff; }
@@ -11601,13 +11603,23 @@ body {
     border: 1px solid #9b4aff; }
 
 .section-contato {
+  color: #fff;
   background: transparent; }
   .section-contato .title {
     color: #fff;
     border-bottom: 1px solid #fff; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .section-contato .subtitle {
+      font-size: 1.3rem; } }
   .section-contato .card-body {
     color: #9b4aff;
     border: 1px solid #9b4aff; }
+  .section-contato .valid-feedback, .section-contato .invalid-feedback {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 0 5px;
+    border-radius: 0.25rem; }
+  .section-contato button {
+    width: 35%; }
 
 .rodape {
   color: #fff; }

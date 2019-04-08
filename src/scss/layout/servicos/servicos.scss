@@ -1,8 +1,10 @@
 .section-servicos{
   background: $white;
-  width: 70%;
-  margin: 0 auto;
-  transform: skewX(-20deg);
+  @media (min-width: 576px) {
+    width: 80%;
+    margin: 0 auto;
+    transform: skewX(-10deg);
+  }
   .title {
     @include titulo($cor-background,$cor-background);
   }
