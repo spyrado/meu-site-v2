@@ -16,7 +16,6 @@
       width: 100%;
       z-index: 4000;
       flex-direction: row;
-      justify-content: space-around;
       @media (max-width: 440px) {
         .image-replacement{
           @include text-hide;
@@ -24,6 +23,10 @@
         .nav-link{
           font-size: 1.4rem;
         }
+      }
+      .nav-item{
+        flex-basis: 25%;
+        text-align: center;
       }
     }
   }
