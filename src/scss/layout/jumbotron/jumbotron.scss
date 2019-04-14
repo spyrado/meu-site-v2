@@ -1,7 +1,81 @@
-.section-jumbotron{
-  
-  .jumbotron{
+.section-jumbotron {
+
+  .jumbotron {
     background-color: transparent;
     color: #fff;
   }
+
+  .title {
+    font-size: 1.5rem;
+    position: absolute;
+    width: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: 550px) {
+
+      font-size: 1.8rem;
+      width: 100%;
+    }
+
+    @media (min-width: 768px) {
+
+      font-size: 1.65rem;
+    }
+  }
+
+  .hack {
+    height: 28px;
+    margin-bottom: 0.5rem;
+
+    @media (min-width: 550px) {
+
+      height: 38px;
+    }
+  }
+
+  .figure {
+    position: relative;
+  }
+
+  .anima-jumbotron {
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 20px;
+
+    &:focus {
+      outline: 0;
+    }
+
+    @media (min-width: 768px) {
+
+      position: absolute;
+      right: -50px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+  }
+
+  /* EFEITOS */
+
+  //CARD PERFIL
+  .card-perfil {
+    transition: all 1s;
+  }
+
+  // SOBRE MIM
+  .sobre-mim {
+    position: absolute;
+    opacity: 0;
+    transition: all 1s;
+  }
+}
+
+.anima-sobre-mim {
+  position: relative !important;
+  opacity: 1 !important;
+  float: right;
 }

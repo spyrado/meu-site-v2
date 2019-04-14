@@ -15,8 +15,10 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Nicolas Guilherme Matheus - Desenvolvedor Front-End - Freelancer</title>
 
-  <!-- Bootstrap 4.3.1 -->
+  <!-- Bootstrap 4.3.1 e estilizacoes customizadas -->
   <link rel="stylesheet" href="./dist/css/estilos.css">
+  <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+
 
 </head>
 
@@ -58,17 +60,19 @@
   <section class="section-jumbotron">
     <div class="jumbotron">
       <div class="row container mx-auto">
-        <div class="col-12 col-md-6 text-center">
+        <div class="col-12 card-perfil text-center animated flip">
           <h1 class="title">Nicolas Guilherme Matheus</h1>
+          <div class="hack"></div>
           <figure class="figure">
             <img src="./dist/img/nicolas-guilherme.jpg" class="figure-img img-fluid rounded-circle"
               alt="A generic square placeholder image with rounded corners in a figure.">
             <figcaption class="figure-caption text-white">
               <strong>Desenvolvedor Front-End</strong>
             </figcaption>
+            <button class="anima-jumbotron"><i class="fas fa-arrow-right indicador-animado animated shake infinite slower"></i></button>
           </figure>
         </div>
-        <div id="sobre-mim" class="col-12 col-md-6">
+        <div id="sobre-mim" class="sobre-mim col-12 col-md-6">
           <h2 class="border-bottom">Sobre Mim</h2>
           <p>Prazer 😆, me chamo Nicolas, tenho <span class="idade"></span> anos. <br>
             Formado em Análise e Desenvolvimento de Sistemas (ADS), <br>
@@ -282,7 +286,9 @@
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <script src="./node_modules/popper.js/dist/popper.min.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
   <script src="./src/js/scrollspy.js"></script>
+  <script src="./src/js/anima-jumbotron.js"></script>
   <script src="./src/js/index2.js"></script>
   <script>
     var anoAtual = new Date().getFullYear();
